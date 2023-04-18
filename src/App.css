@@ -1,0 +1,333 @@
+.App {
+  text-align: center;
+  background-color: #282c34 !important;
+  overflow: auto !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-select .ant-select-clear{
+  color: white;
+  background: none;
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  position: relative;
+  background: transparent;
+  border: 0;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  color: black;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-select-multiple .ant-select-selection-item{
+  background-color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h2{
+  font-size: 25px !important;
+}
+h1{
+  font-size: 30px !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tag{
+  background-color: white;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  border: none !important;
+}
+
+@media (min-width: 768px) { /* pantalla de escritorio */
+  .ant-drawer-content-wrapper {
+    width: 800px !important;
+  }
+}
+.ant-tour-content{
+  width: fit-content;
+}
+.navbar-nav{
+  font-size: 18px;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.608);
+  width: 100%;
+}
+
+.navbar-nav a{
+  background-color: rgba(255, 255, 255, 0.06);
+  margin: 10px;
+  border-radius: 20px;
+  padding: 8px 20px !important;
+  color: white;
+}
+
+.ant-input::placeholder{
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light{
+  background-color: transparent;
+  color: white;
+  justify-content: flex-end;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light li{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px !important;
+  margin-right: 30px !important;
+}
+
+.subtitle{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px ;
+  margin: 0px auto;
+  font-size: 30px !important;
+}
+
+.tagcloud{
+  margin: 0px auto ;
+}
+p{
+  font-size: 1rem;
+}
+
+.divisor{
+  width: 25%;
+  margin: 15px 0px;
+  height: 3px;
+  background: linear-gradient(to right, #3c00ff, #ffa200)
+}
+
+.card {
+  border: 1px solid transparent !important; /* Añade un borde transparente para asegurarte de que el borde degradado se superpone */
+  border-image: linear-gradient(to right, #3c00ff, #ff0000) 1 !important; /* Aplica el degradado al borde de la tarjeta */
+  border-radius: 2000px;
+}
+
+.perfil{
+  background: black;
+  padding: 10px;
+  border-radius: 400px;
+  width: 50%;
+}
+
+.idioma{
+  /* justify-content: center; */
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 12px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+ justify-items: start;
+  transition: all 0.3s ease-out;
+  animation-name: bajada; /* Nombre de la animación */
+  animation-duration: 1s; /* Duración de la animación */
+  animation-timing-function: ease; /* Función de temporización (opcional) */
+  animation-iteration-count: initial; /* Cantidad de repeticiones (opcional) */
+}
+
+
+
+@keyframes bajada {
+  from { /* Definir el estado inicial */
+    transform: translateY(200px)
+  }
+  to { /* Definir el estado final */
+    transform: translateY(0px)
+  }
+}
+
+
+@keyframes spin {
+  from {
+    width: 48px;
+  }
+  to {
+    width: 140px;
+  }
+}
+
+
+
+.ant-popover-inner{
+width: 140px;
+height: 150px;
+}
+.ant-popover-inner p{
+ cursor: pointer;
+  }
+  .ant-popover-inner p:hover{
+    background-color: rgb(210, 210, 210);
+     }
+
+.idiomaActual {
+  margin-left: 0 !important;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: -100%;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.idioma:hover .idiomaActual {
+  transform: scaleY(1);
+  opacity: 1;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+label{
+  font-size: 1.1rem;
+  margin-top: 30px !important;
+}
+
+input[type='text'],input[type='email'],textarea{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  color: white;
+}
+
+#footer li{
+padding: 10px 20px;
+list-style: none;
+text-decoration: none;
+color: white;
+}
+
+#footer a{
+  text-decoration: none;
+  color: white;
+  transition: all 300;
+  border-bottom: 1px solid rgb(136, 136, 197);
+  }
+
+
+  .custom-drawer {
+    background-color: #1f1f1f !important;
+    color: #f0f0f0 !important;
+  }
+  
+  .section-title {
+    color: #ff9800 !important;
+  }
+  
+  .company-img,
+  .project-img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 10px 0 !important;
+    border-radius: 10px !important;
+    object-fit: cover !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .project-title {
+    margin: 10px 0 !important;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+
+  .css-dev-only-do-not-override-10ed4xt h4{
+    color: white !important;
+  }
+
+  .anticon-close{
+    color: wheat;
+  }
+ 
+  .tag-cloud-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 100% !important;
+  }
+
+  li{
+    list-style: none;
+    font-size: 18px;
+  }
+
+  
+  
+  .tag-cloud-responsive {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #footer a:hover {
+    color: rgb(124, 124, 250);
+    animation: bounce 0.5s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+input[type='text']:focus,input[type='email']:focus,textarea:focus {
+  outline: 0 !important;
+  border: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  color: white;
+  /* otros estilos que quieras remover */
+}
