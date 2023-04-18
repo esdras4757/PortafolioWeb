@@ -290,8 +290,8 @@ const Projects = ({t,i18n}) => {
                   <p className="my-2 my-md-4 p-0">{t(`proyectos.${proyecto.id}.description`)}</p>
                   <p className="my-1 my-md-4 p-0">{t(`proyectos.${proyecto.id}.tecnologies`)}</p>
                   <Row>
-                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.project}><img className="col-3 my-3 mx-4" src={ imagesObj['./88422.png']}/><figcaption>{t('proyectos.proyect')}</figcaption></a>
-                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.github}><img className="col-3 my-3 mx-4"  src={ imagesObj['./github.png']}/><figcaption>{t('proyectos.code')}</figcaption></a>
+                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.project}><img className="col-3 my-2 my-md-3 mx-4" src={ imagesObj['./88422.png']}/><figcaption>{t('proyectos.proyect')}</figcaption></a>
+                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.github}><img className="col-3 my-2 my-md-3 mx-4"  src={ imagesObj['./github.png']}/><figcaption>{t('proyectos.code')}</figcaption></a>
                   </Row>  
               </Card>
               );

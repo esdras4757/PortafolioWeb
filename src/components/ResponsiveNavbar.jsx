@@ -4,7 +4,7 @@ import cv from './files/files_cv_uriel_lara.pdf'
 
 const ResponsiveNavbar = ({t}) => {
   return (
-    <Navbar collapseOnSelect expand="md" variant="dark">
+    <Navbar collapseOnSelect expand="lg" variant="dark">
        <Container>
     <Navbar.Brand href="#home"><h1>{t('homeTitle')}</h1></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
