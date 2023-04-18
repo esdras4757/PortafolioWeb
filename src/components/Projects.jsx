@@ -275,23 +275,23 @@ const Projects = ({t,i18n}) => {
       setChipsEdit={setChipsEdit}
        />
 
-      <Row className="w-100 justify-content-around">
+      <Row className="w-100 justify-content-center">
         {proyectosState
           ? proyectosState.map((proyecto) => {
               return (
-                <Card className="col-10 col-md-3 m-3 text-white card" style={{ height: 'auto', background:'#2b2b2b',border:'1px solid #aaaa '}}>
-                  <h2 className="my-4">{t(`proyectos.${proyecto.id}.title`)}</h2>
+                <Card className="col-5 col-md-3 my-2 mx-1 my-md-3 mx-md-3 text-white card p-0" style={{ height: 'auto', background:'#2b2b2b',border:'1px solid #aaaa '}} >
+                  <h2 className="my-2 my-md-4">{t(`proyectos.${proyecto.id}.title`)}</h2>
                   <img
-                  className="my-4" 
+                  className="my-1 my-md-4 p-0" 
                     width={'100%'}
                     src={proyecto.images}
                     alt={`imagen del proyecto ${proyecto.title}`}
                   />
-                  <p className="my-4">{t(`proyectos.${proyecto.id}.description`)}</p>
-                  <p className="my-4">{t(`proyectos.${proyecto.id}.tecnologies`)}</p>
+                  <p className="my-2 my-md-4 p-0">{t(`proyectos.${proyecto.id}.description`)}</p>
+                  <p className="my-1 my-md-4 p-0">{t(`proyectos.${proyecto.id}.tecnologies`)}</p>
                   <Row>
-                  <a className="col-6" href={proyecto.project}><img className="col-3 my-3 mx-4" src={ imagesObj['./88422.png']}/><figcaption>{t('proyectos.proyect')}</figcaption></a>
-                  <a className="col-6" href={proyecto.github}><img className="col-3 my-3 mx-4"  src={ imagesObj['./github.png']}/><figcaption>{t('proyectos.code')}</figcaption></a>
+                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.project}><img className="col-3 my-3 mx-4" src={ imagesObj['./88422.png']}/><figcaption>{t('proyectos.proyect')}</figcaption></a>
+                  <a className="col-6 my-1 my-md-4 p-0" href={proyecto.github}><img className="col-3 my-3 mx-4"  src={ imagesObj['./github.png']}/><figcaption>{t('proyectos.code')}</figcaption></a>
                   </Row>  
               </Card>
               );

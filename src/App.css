@@ -24,12 +24,12 @@
   width: 100%;
 }
 
-:where(.css-dev-only-do-not-override-10ed4xt).ant-select .ant-select-clear{
+.ant-select .ant-select-clear{
   color: white;
   background: none;
 }
 
-:where(.css-dev-only-do-not-override-10ed4xt).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
   position: relative;
   background: transparent;
   border: 0;
@@ -38,7 +38,18 @@
   border-radius: 0;
   color: black;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-select-multiple .ant-select-selection-item{
+
+:where(.css-10ed4xt).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  position: relative;
+  background: transparent;
+  border: 0;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  color: black;
+}
+
+.ant-select-multiple .ant-select-selection-item{
   background-color: white;
 }
 
@@ -47,7 +58,7 @@
 }
 
 h2{
-  font-size: 25px !important;
+  font-size: 20px !important ;
 }
 h1{
   font-size: 30px !important;
@@ -61,7 +72,7 @@ h1{
     transform: rotate(360deg);
   }
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tag{
+.ant-tag{
   background-color: white;
 }
 a{
@@ -75,6 +86,19 @@ a{
     width: 800px !important;
   }
 }
+
+@media (max-width: 425px) { /* pantalla de escritorio */
+ h2{
+  font-size: 13px !important;
+ }
+ p,a{
+    font-size: 10px !important;
+ }
+ .ant-card-body{
+  padding: 4px !important;
+ }
+}
+
 .ant-tour-content{
   width: fit-content;
 }
@@ -98,12 +122,13 @@ a{
   color: white;
 }
 
-:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light{
+.ant-menu-light{
   background-color: transparent;
   color: white;
   justify-content: flex-end;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light li{
+
+.ant-menu-light li{
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px !important;
   margin-right: 30px !important;
